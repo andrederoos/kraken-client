@@ -1,0 +1,30 @@
+{
+    "name": "andrederoos/kraken-client",
+    "description": "REST-api client for Kraken.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andre de Roos",
+            "email": "a.deroos@iseetechnology.nl"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "KrakenClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
