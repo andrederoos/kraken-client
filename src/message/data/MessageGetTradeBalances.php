@@ -1,7 +1,8 @@
 <?php
-namespace KrakenClient\message;
+namespace KrakenClient\message\data;
 
 use GuzzleHttp\Psr7\Request;
+use KrakenClient\message\Message;
 use KrakenClient\object\HttpMethod;
 
 /**
@@ -18,6 +19,7 @@ class MessageGetTradeBalances extends Message
     private const FIELD_ASSET = 'asset';
 
     /**
+     * @param string $asset
      * @param string $version
      */
     public function __construct(string $asset = 'ZUSD', string $version = '0')

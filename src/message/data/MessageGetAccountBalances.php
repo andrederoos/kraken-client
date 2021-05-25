@@ -1,7 +1,8 @@
 <?php
-namespace KrakenClient\message;
+namespace KrakenClient\message\data;
 
 use GuzzleHttp\Psr7\Request;
+use KrakenClient\message\Message;
 use KrakenClient\object\HttpMethod;
 
 /**

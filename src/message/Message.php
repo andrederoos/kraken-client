@@ -42,7 +42,7 @@ abstract class Message
     abstract public function generateRequest(): Request;
 
     /**
-     * @param bool $exendedResponse
+     * @param string $version
      */
     public function __construct(string $version = '0')
     {
